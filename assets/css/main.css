@@ -6,13 +6,11 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:500');
 
 body{
-    width: 100vw;
     color:#707071;
     font-weight: 500;
     line-height:1.6;
     font-family: "Montserrat", sans-serif;
     font-size: 18px;
-    width: 100vw;
     margin: auto;
 }
 
