@@ -7,8 +7,23 @@ function getData () {
     let subject = document.getElementById('subject').value
     let comments = document.getElementById('comments').value
 
+    const elem = document.getElementById("alert");   
+    let pos = 20;
+    let id = setInterval(frame, 5);
+    function frame() {
+        if (pos == 53) {
+        clearInterval(id);
+        elem.style.opacity = 1;
+        } else {
+        pos++; 
+        elem.style.opacity = 0.3;
+        elem.style.top = pos + "px";  
+        }
+    }
+
     document.getElementById("alert").style.backgroundColor = "rgb(252, 179, 179)";
     document.getElementById("alert").style.color = "#965656";
+
 
     if( name == ""){
         document.getElementById("alert").innerHTML = "Name cannot be empty";
